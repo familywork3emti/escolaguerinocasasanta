@@ -1,0 +1,314 @@
+
+/*body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#000000;
+}
+
+header {
+    /*position: fixed;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+header .rolagem{
+    background-color: aliceblue;
+    padding: 20px 4px;
+}
+header .rolagem a{
+    color: blue;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.logo img{
+    width: 55px;
+    height: 55px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a{
+    color: #121111;
+    text-decoration:none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+li :hover{
+    text-decoration: underline;
+    color: blue;
+}
+.link{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 8px #000000;
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+}
+.link i{
+    transition: 0.2s;
+}
+
+.link i{
+    color:#f0d1d1;
+    transform: scale(1.2);
+}
+.link-1{
+    color: blue;
+}
+
+.link::before{
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    left: -40px;
+    background-color: aliceblue;
+}
+.link:hover::before{
+    animation: desloca .5s;
+    left: 0px;
+    top: 0px;
+}
+@keyframes desloca{
+    0%{
+         left: -40px;
+         top: 40px;
+}
+50%{
+    left:-15px;
+    top:0px
+}
+100%{ 
+    left: 0px;
+    top: 25px;
+}
+
+}
+.sec_container{
+    width: 100%;
+     min-height: 100vh;
+     padding: 20px;
+     background-color: #f0f0f0;
+     display: flex;
+     gap: 20px;
+}
+.sec_text .sec_image{
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sec_text{
+    background-color: #fff;
+}
+.sec_image{
+    float: left;
+    width:100px;
+    height:10px;
+}
+.imagem img{
+    height:300px;
+}
+/* Responsividade para telas menores *
+@media (max-width: 768px) {
+    .sec_container {
+        flex-direction: column;
+    }
+}
+.hero-section{
+height: 100vh;
+background: url('../image/escola.jpg') no-repeat center center/cover;
+box-shadow:inset #5d2e2e;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #000000;
+text-align: center;
+
+}
+.hero-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} 
+
+.hero-content{
+    margin: 0px;
+}
+.hero-content h1 {
+    font-size:60px;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom:40px;
+    padding: 0px;
+    color:#fff;
+}
+
+.cta-button{
+background-color:#2503a1;
+color: rgb(190, 64, 229);
+padding: 15px 30px;
+text-decoration: none;
+border-radius:15px;
+transition-property: background-color #683bbd;
+transition-property: all;
+transition-property: margin-left,font-size, #fff;
+}
+
+.services-secction {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #2503a1;
+    text-align: center;
+    align-items:center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.services-secction h2{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.swiper-container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap:15px;
+    padding-top: 20x;
+    padding-bottom: 20px;
+}
+
+.swiper-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:100%;
+}
+
+.service-card{
+    cursor: pointer;
+    border: solid 1px #fff;
+    width: 180px;
+    height: 280px;/*ajuste a altura confotme necessario*
+    padding: 30px;
+    background: #08080800;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;/*alinhe os itens verticalmente*
+    justify-content: center; /*centralize verticalmente*
+    align-items :center;/* centralize horizontalmente*
+    box-shadow: 4px 4px 6px rgba(248, 246, 246, 0.9);/*adiciona uma sombra sutil*
+    transition: all 0.5s;
+    border: 10px solid transparent;
+
+}
+.service-card:hover {
+    border: 1px solid #f8f8f8;
+    border-radius: none;
+}
+.swiper-button-next, .swiper-button-prev{
+    color:#fff; /*altere a cor das setas confome necessario *
+
+}
+
+.swiper-pagination-bullet{
+    background-color:#fff;
+}
+@media (max-width: 768px){
+    .service-card{
+        width: 90%;
+    }
+}
+
+@media (max-widht: 480px){
+    .service-card{
+        width:100%
+    }
+}
+
+.service-card h3{
+    font-size:24px;
+    top:30px;
+}
+
+.service-card p {
+    font-size: 20px;
+    margin: auto;
+    color: #fff;
+}
+
+.service-card img{
+    width:150px;
+    left: 10px;
+    align-items: center;
+}
+
+.obout-section, .contact-section{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-section form{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section form input, .contact-section form textarea{
+padding: 10px;
+border:1px solid #ccc;
+border-radius: 5px;
+}
+
+.contact-section form button{
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+*/

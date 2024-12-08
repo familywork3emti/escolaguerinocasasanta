@@ -1,0 +1,265 @@
+:root {
+    --primary-color: #2d3436;
+    --accent-color: #0984e3;
+    --background-color: #ffffff;
+    --text-color: #2d3436;
+    --shadow-color: rgba(45, 52, 54, 0.1);
+    --gradient-start: #74b9ff;
+    --gradient-end: #0984e3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.about-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg,
+        rgba(116, 185, 255, 0.1) 0%,
+        rgba(9, 132, 227, 0.1) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Grid para as duas divs lado a lado */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Estilização do lado esquerdo */
+.left-content {
+    padding-right: 30px;
+}
+
+.title-wrapper {
+    margin-bottom: 40px;
+}
+
+.title-wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.title-decoration {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    border-radius: 2px;
+}
+
+.quote-box {
+    background: var(--background-color);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px var(--shadow-color);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.quote-box:hover {
+    transform: translateY(-5px);
+}
+
+.quote-mark, .quote-mark-end {
+    font-size: 4rem;
+    color: var(--accent-color);
+    opacity: 0.2;
+    position: absolute;
+    line-height: 1;
+}
+
+.quote-mark {
+    top: 20px;
+    left: 20px;
+}
+
+.quote-mark-end {
+    bottom: 0;
+    right: 20px;
+}
+
+.quote-text {
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.8;
+    margin: 0 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilização do lado direito */
+.right-content {
+    position: relative;
+}
+
+.visual-element {
+    position: relative;
+    height: 400px;
+    background: linear-gradient(45deg, var(--gradient-start), var(--gradient-end));
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-decoration {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    top: -50px;
+    right: -50px;
+}
+
+.square-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 255, 255, 0.1);
+    bottom: -30px;
+    left: -30px;
+    transform: rotate(45deg);
+}
+
+.education-svg {
+    width: 120px;
+    height: 120px;
+    fill: white;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.stat-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-item h3 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.stat-item p {
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Animações */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.left-content {
+    animation: fadeInLeft 0.8s ease-out forwards;
+}
+
+.right-content {
+    animation: fadeInRight 0.8s ease-out forwards;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .left-content {
+        padding-right: 0;
+    }
+
+    .visual-element {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .title-wrapper h2 {
+        font-size: 2rem;
+    }
+
+    .quote-text {
+        font-size: 1.1rem;
+    }
+
+    .quote-box {
+        padding: 30px 20px;
+    }
+
+    .stats-container {
+        gap: 15px;
+    }
+
+    .stat-item {
+        padding: 15px;
+    }
+
+    .stat-item h3 {
+        font-size: 1rem;
+    }
+
+    .stat-item p {
+        font-size: 1.25rem;
+    }
+}

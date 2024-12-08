@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5; URL='http://127.0.0.1:5501/projeto%20escola/gallery.cultural.html'"/> -->
+    <title>ESCOLA PROFESSOR GUERINO CASASANTA</title>
+    <!--favicon-->
+     <link rel="icon" href="./assets/image/favicon_io (1)/favicon.ico">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/medio.css">
+    <!--<link rel="stylesheet" href="./assets/css/sobre.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div id="logo" class="logo">
+            <a href="#home"> 
+                <img src="./assets/image/logo guerino.png" alt="logo da escola estadual guerino casasanta">
+            </a> 
+          </div>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#services">Eventos</a></li>  
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contatos</a></li>
+            </ul>
+            <div class="link link-1">
+                <a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer" i class="bi bi-instagram"></i></a> 
+                <a href="https://www.whatsapp.com/?lang=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-whatsapp"></i></a> 
+                <a href="https://www.facebook.com/GuerinoCasasanta/?locale=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-facebook"></i></a>            
+            </div> 
+         </nav>
+       </header>
+       <section id="home"class="hero-section">
+         <div>
+            <h1>Bem-Vindos </h1>
+            <h2> Escola Estadual Professor Guerino Casasanta</h2>
+            <p> Pequenas vitorias diarias geram grandes conquistas no futuro.</p>
+            <a href="escola.html"class="cta-button"> Saiba Mais</a>
+         </div>
+       </section>
+       <section id="sec" class="sec_container">
+        <div class="container">
+          <!-- SVG Background -->
+          <svg class="background-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M45,-52.5C59.2,-43.8,72.3,-30.6,77.1,-14.4C81.9,1.8,78.5,21,69.2,36.7C59.9,52.4,44.8,64.6,27.7,69.9C10.6,75.2,-8.5,73.5,-25.8,67.1C-43.1,60.7,-58.6,49.5,-67.1,33.8C-75.6,18.1,-77.1,-2.1,-71.3,-19.2C-65.5,-36.3,-52.4,-50.3,-37.8,-58.7C-23.2,-67.1,-7.1,-69.9,4.7,-75.3C16.5,-80.7,30.8,-61.2,45,-52.5Z" transform="translate(100 100)" />
+          </svg>
+  
+          <div class="content-wrapper">
+              <div class="card">
+                  <h2 class="card-title">Ensino Fundamental</h2>
+                  <p class="card-content">
+                      Desenvolvemos estratégias personalizadas para impulsionar nossos alunos ao próximo nível. 
+                      Nossa abordagem única combina tecnologia de ponta com expertise comprovada.
+                  </p>
+                  <a href="EnsinoFundamental.html" target="_parent" class="card-button">Saiba mais</a>
+              </div>
+              <div class="card">
+                  <h2 class="card-title">Ensino Médio Técnico</h2>
+                  <p class="card-content">
+                      Nossa equipe especializada de professores trabalha para entregar os melhores resultados 
+                      que superam as expectativas dos nossos alunos.
+                  </p>
+                  <a href="EnsinoMedio.html" target="_parent" class="card-button">Conheça mais</a>
+              </div>
+          </div>
+      </div>
+       </section>
+       <section id="services" class="cards-container">
+        <h2 class="section-title">Eventos e Atividades Escolares</h2>
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card" onclick="openModal('Feira de Ciências', 'Exposição de projetos científicos desenvolvidos pelos alunos do Ensino Médio.')">
+                <div class="card-image">
+                    <img src="./assets/image/feira de ciencias/1733085776725.jpg" alt="Feira de Ciências">
+                    <div class="card-overlay">
+                        <h3>Feira de Ciências</h3>
+               
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Feira de Ciências</h3>
+                    <p class="card-description">Exposição de projetos científicos dos alunos.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="ciencias.html" target="_parent" class="card-button">Ver mais</a>
+                    <i class="bi bi-arrow-right card-icon"></i>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card" onclick="openModal('Jogos Escolares', 'Competições esportivas entre as turmas do colégio.')">
+                <div class="card-image">
+                    <img src="./assets/image/jogos escolares/01.jpg" alt="Jogos Escolares">
+                    <div class="card-overlay">
+                        <h3>Jogos Escolares</h3>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Jogos Escolares</h3>
+                    <p class="card-description">Competições esportivas entre turmas.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="jogos_escolares.html" target="_parent" class="card-button">Ver mais</a>
+                    <i class="bi bi-arrow-right card-icon"></i>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card" onclick="openModal('Mostra Cultural', 'Apresentações artísticas e culturais dos alunos.')">
+                <div class="card-image">
+                    <img src="assets/image/cultural/1733085776611.jpg" alt="Mostra Cultural">
+                    <div class="card-overlay">
+                        <h3>Mostra Cultural</h3>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Mostra Cultural</h3>
+                    <p class="card-description">Apresentações artísticas e culturais.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="mostra_cultural.html"  target="_parent" class="card-button">Ver mais</a>
+                    <i class="bi bi-arrow-right card-icon"></i>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="card" onclick="openModal('Projeto Literário', 'Festival de literatura e contação de histórias.')">
+                <div class="card-image">
+                    <img src="assets/image/literario/foto01.jpeg" alt="Projeto Literário">
+                    <div class="card-overlay">
+                        <h3>Projeto Literário</h3>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Projeto Literário</h3>
+                    <p class="card-description">Festival de literatura e histórias.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="projeto_literario.html" target="_parent" class="card-button"> Ver mais</a>
+                    <i class="bi bi-arrow-right card-icon"></i>
+                </div>
+            </div>
+            <!--card5-->
+            <div class="card" onclick="openModal('Projeto Robotica', 'Apresentações de Robotica dos alunos.')">
+              <div class="card-image">
+                  <img src="assets/image/robotica/1733085776492.jpg" alt="Projeto Literário">
+                  <div class="card-overlay">
+                      <h3>Projeto Robotica</h3>
+                  </div>
+              </div>
+              <div class="card-content">
+                  <h3 class="card-title">Projeto Robotica</h3>
+                  <p class="card-description">Festival de Robotica</p>
+              </div>
+              <div class="card-footer">
+                <a href="robotica.html" target="_parent" class="card-button"> Ver mais </a>
+                  <i class="bi bi-arrow-right card-icon"></i>
+              </div>
+          </div>
+        <!--card 6-->
+          <div class="card" onclick="openModal('Projeto artísticos', 'Festival de Caricaturas e Crochê.')">
+            <div class="card-image">
+                <img src="assets/image/artes/1733085776559.jpg" alt="Projeto Artistico">
+                <div class="card-overlay">
+                    <h3>Projeto Artísticos</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Projeto Artísticos</h3>
+                <p class="card-description">Festival de Caricaturas e Crochê.</p>
+            </div>
+            <div class="card-footer">
+              <a href="artes.html" target="_parent" class="card-button">Ver mais</a>
+                <i class="bi bi-arrow-right card-icon"></i>
+            </div>
+        </div>
+        <!--card 7-->
+        <div class="card" onclick="openModal('Projeto 3D ', 'Festival 3d e Resinas.')">
+            <div class="card-image">
+                <img src="./assets/image/3d/1733085776440.jpg" alt="Projeto 3D e Resinas">
+                <div class="card-overlay">
+                    <h3>Projeto 3D e Resinas</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Projeto Resinas</h3>
+                <p class="card-description">Festival de Resinas E impressões 3D.</p>
+            </div>
+            <div class="card-footer">
+              <a href="3d_resina.html" target="_parent" class="card-button">Ver mais</a>
+                <i class="bi bi-arrow-right card-icon"></i>
+            </div>
+        </div>
+        <!--card 8-->
+        <div class="card" onclick="openModal('Projetos Escolares', 'Festival e Eventos.')">
+            <div class="card-image">
+                <img src="./assets/image/eventos/1733085776696.jpg" alt="Projeto Literário">
+                <div class="card-overlay">
+                    <h3>Projeto Escolares</h3>
+                </div>
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Projeto Escolares</h3>
+                <p class="card-description">Festival e Eventos.</p>
+            </div>
+            <div class="card-footer">
+              <a href="eventos.html" target="_parent" class="card-button">Ver mais</a>
+                <i class="bi bi-arrow-right card-icon"></i>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal()">x</button>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+      <!--<section id="services" class= "services-select">
+        <h2> Nossos <span>Eventos</span></h2>
+        <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        </div>
+            <div class="service-card">
+                <h3>
+                    <img src=" colocae imagem !!!!! ">
+                </h3>
+                <p><a href="#3ºEMTI"></a>3ºEMTI</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+          <div class="service-card">
+            <h3>
+                <img src=" IMAGEM !!!">
+            </h3>
+            <p>2ºEMTI</p>
+          </div>
+        </div>
+          <div class="swiper-slide">
+          <div class="service-card">
+      <h3>
+        <img src=" IMAGEM DNV!!!!">
+      </h3>
+      <p>1ºA</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+    <div class="service-card">
+        <h3>
+             <img src="IMAGEM ">
+        </h3>
+       <p> 2º EMTI</p>
+       </div> 
+       </div>
+      <div class="swiper-slide">
+        <div class="service-card">
+          <h3>
+            <img src="IMAGEM">
+          </h3>
+          <p> 1ºA</p>
+        </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="service-card">
+            <h3>
+              <img src="IMAGEM">
+            </h3>
+            <p>1ªB</p>
+          </div>
+        </div>
+      </div>
+      !-- Adicionando botões da navegação
+       <div class="swiper-button-next"></div>
+       <div class="swiper-button-prev"></div>
+       !-- Adicionando paginação --
+        <div class="swiper-pagination">
+          !-- add pagination here--
+         </div> 
+        </div>
+         </selection> -->
+        <!-- Primeira Seção - 
+         <div class="calendar-header">
+            <button id="prevMonth">←</button>
+            <h2 id="currentMonth">Mês e Ano</h2>
+            <button id="nextMonth">→</button>
+        </div>
+        <div class="weekdays calendar">
+            <div>Dom</div>
+            <div>Seg</div>
+            <div>Ter</div>
+            <div>Qua</div>
+            <div>Qui</div>
+            <div>Sex</div>
+            <div>Sáb</div>
+        </div>
+        <div id="calendar" class="calendar"></div>
+Sobre -->
+ <!-- Primeira Seção - Sobre -->
+    <section id="about" class="about-section">
+        <div class="decoration-circle circle-1"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Escola</h2>
+            </div>
+            <p class="quote">"O ideal da educação não é aprender ao máximo, maximizar os resultados, é antes de tudo aprender a aprender, é aprender a se desenvolver e aprender a continuar a se desenvolver depois da escola."</p>
+            <div class="parallax-container">
+                <div class="parallax-image"></div>
+                <div class="parallax-content">
+                    <p>Uma instituição comprometida com a excelência educacional e o desenvolvimento integral dos alunos.</p>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="#" class="saiba-mais">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+    <!-- Segunda Seção - Missão e Valores -->
+    <section id="mission" class="mission-section">
+        <div class="decoration-circle circle-2"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Missão e Valores</h2>
+            </div>
+            <div class="mission-grid">
+                <div class="content-item">
+                    <h3>Nossa Missão</h3>
+                    <p>Acreditamos em uma educação transformadora que vai além da simples transmissão de conhecimento. Nosso objetivo é desenvolver habilidades que permitam um aprendizado contínuo e autônomo.</p>
+                </div> 
+                <div class="content-item">
+                    <h3>Nossa Metodologia</h3>
+                    <p>Trabalhamos com métodos inovadores que estimulam o pensamento crítico e a capacidade de aprendizado independente, preparando nossos alunos para os desafios do futuro.</p>
+                </div>
+                <div class="content-item">
+                    <h3>Nossos Valores</h3>
+                    <p>Valorizamos a curiosidade, a criatividade e o desenvolvimento pessoal. Incentivamos nossos alunos a questionar, explorar e descobrir seu próprio caminho no aprendizado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Terceira Seção - Ambiente -->
+    <section id="environment" class="environment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nosso Ambiente</h2>
+            </div>
+            <div class="environment-content">
+                <div class="environment-image">
+                    <img src="./assets/image/fundobg.jpeg" alt="Ambiente educacional moderno">
+                </div>
+                <div class="environment-text">
+                    <h3>Ambiente de Aprendizagem</h3>
+                    <p>Nosso ambiente educacional é projetado para inspirar a criatividade e promover a colaboração. Equipado com tecnologia moderna e espaços versáteis, oferecemos uma experiência de aprendizado única que combina o melhor da educação tradicional com métodos inovadores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+            <section id="contact" class="contact-section">
+             <h2>contatos</h2>
+             <form id="contact-form" action="process_form.php" method="post">
+               <input type="text" name="name" placeholder="seu nome" required>
+               <input type="email" name="email" placeholder="seu email" required>
+               <textarea name="message" placeholder="message" required></textarea>
+               <button type="submit">enviar</button>
+           </form>
+            </section>
+            <!--
+                <section id="contact" class="contact-section">
+                   <h2>Contatos</h2>
+                   <form id="contact-form" class="contact-form">
+                       <div class="form-group">
+                           <input type="text" name="name" placeholder="Seu nome" required>
+                           <span class="error-message" id="name-error"></span>
+                       </div>
+                       <div class="form-group">
+                           <input type="email" name="email" placeholder="Seu email" required>
+                           <span class="error-message" id="email-error"></span>
+                       </div>
+                       <div class="form-group">
+                           <textarea name="message" placeholder="Sua mensagem" required></textarea>
+                           <span class="error-message" id="message-error"></span>
+                       </div>
+                       <button type="submit">
+                           <span class="button-text">Enviar</span>
+                           <span class="spinner hidden"></span>
+                       </button>
+                       <div id="form-message" class="form-message"></div>
+                   </form>
+               </section>
+         -->
+         <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Contato</h4>
+                        <p>Email: escola.55948@educação.mg.gov.br</p>
+                        <p>Endereço: Treze de maio 2009</p>
+                        <p>Telefone: (35) 3441-1941</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Redes Sociais</h4>
+                        <div class="social-links">
+                            <img src="./assets/image/social link/communication.png" a href="social-link"></a>
+                            <img src="./assets/image/social link/instagram.png" a href="social-link"></a>
+                            <img src="./assets/image/social link/whatsapp.png" a href="social-link"></a>
+                        </div>
+                    </div>
+                </div>
+                <section class="footer-grid">
+                    <div class="container_content">
+                        <div class="footer-content">
+                            <div class="footer-column">
+                                <div class="footer-section">
+                                    <h4>Desenvolvido</h4>
+                                    <p>3º EMTI</p>
+                                    <p>Curso Tecnico de Desenvolvimento de Sistemas</p>
+                                    <img class="content_img" src="./assets/image/slow.png" alt="Footer Background">
+                                    <img class="content_img" src="./assets/image/ols_logo-removebg-preview.png" alt="Footer Background">
+                                </div>
+                            </div>
+                            <div class="footer-column">
+                                <div class="footer-section">
+                                    <h4>Colaboradores</h4>
+                                    <div class="colaboradores">
+                                        <span>
+                                            <p>Brenda Mariane</p>
+                                            <p>Camilly vitoria</p>
+                                            <p>Carlos Eduardo</p>
+                                            <p>Eduardo Antônio</p>
+                                            <p>Eduardo Lopes</p>
+                                            <p>Eric Wesley</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-column">
+                                <div class="footer-section">
+                                    <h4>Colaboradores</h4>
+                                    <span>
+                                        <p>Fabiana Simões</p>
+                                        <p>Gustavo Martim</p>
+                                        <p>Henrique Ramos</p>
+                                        <p>Júlia Gabriélle</p>
+                                        <p>Julia Karen</p>
+                                        <p>Juliana Vitória</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="footer-column">
+                                <div class="footer-section">
+                                    <h4>Colaboradores</h4>
+                                    <span>
+                                        <p>Kauã Herinque</p>
+                                        <p>Leonardo de Paula</p>
+                                        <p>Luna Fernades</p>
+                                        <p>Maria Eduarda</p>
+                                        <p>Nathália Abreu</p>
+                                        <p>Samira Luiza</p>
+                                        <p>Samuel Eleodoro</p>
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Escola Prof Guerino Casasanta.Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</footer> 
+<!-- Botão de WhatsApp -->
+<a href="https://wa.me/+553534411941" class="whatsapp-btn" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+         <!--swiper-->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         <script src="./assets/js/script.js"></script>
+</body>
+</html>

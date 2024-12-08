@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESCOLA PROFESSOR GUERINO CASASANTA</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/galeria.css">
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <a href="index.html">
+                <img src="./assets/image/logo guerino.png" alt="logo da escola estadual guerino casasanta">
+            </a>
+            
+          </div>
+            <ul>
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="#service">eventos</a></li>  
+                <li><a href="#about">sobre</a></li>
+                <li><a href="#contact">contatos</a></li>
+            </ul>
+            <div class="link link-1">
+               <a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer" i class="bi bi-instagram"></i></a> 
+               <a href="https://www.whatsapp.com/?lang=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-whatsapp"></i></a> 
+               <a href="https://www.facebook.com/GuerinoCasasanta/?locale=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-facebook"></i></a>         
+               </div>
+            
+         </nav>
+       </header>
+       <div class="cards-container">
+        <h2 class="section-title">Eventos e Atividades Escolares</h2>
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card" onclick="openModal('./assets/image/robotica/1733085776473.jpg')">
+                <img src="./assets/image/robotica/1733085776473.jpg" alt="Robotica">
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" onclick="openModal('./assets/image/robotica/1733085776482.jpg')">
+                <img src="./assets/image/robotica/1733085776482.jpg" alt="Robotica">
+            </div>
+            <!-- Card 3 -->
+            <div class="card" onclick="openModal('./assets/image/robotica/1733085776492.jpg')">
+                <img src="./assets/image/robotica/1733085776492.jpg" alt="Robotica">
+                
+            </div>
+             <!-- Card 4 -->
+            <div class="card" onclick="openModal('./assets/image/robotica/1733085776502.jpg')">
+                <img src="./assets/image/robotica/1733085776502.jpg" alt="Robotica">
+            </div>
+             <!-- Card 5 -->
+            <div class="card" onclick="openModal('./assets/image/robotica/1733085776513.jpg')">
+                <img src="./assets/image/robotica/1733085776513.jpg" alt="Robotica">
+            </div>
+            <!-- Card 6 -->
+            <div class="card" onclick="openModal('./assets/image/1733085776523.jpg')">
+                <img src="./assets/image/robotica/1733085776523.jpg" alt="Robotica">
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card" onclick="openModal('./assets/image/escola.jpg')">
+                <img src="./assets/image/robotica/1733085776637.jpg" alt="Robotica">
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card" onclick="openModal('./assets/image/ft03.jpeg')">
+                <img src="./assets/image/robotica/ft03.jpeg" alt="Robotica">
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-image" src="" alt="Imagem Ampliada">
+    </div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-section">
+                            <h4>Contato</h4>
+                            <p>Email: escola.55948@educação.mg.gov.br</p>
+                            <br>
+                            <p>Endereço: Treze de maio 1580</p>
+                            <br>
+                            <p>Telefone: (35) 3441-1941</p>
+                        </div>
+                        <div class="footer-section">
+                            <h4>Redes Sociais</h4>
+                            <div class="social-links">
+                                <img src="./assets/image/social link/communication.png" a href="social-link"></a>
+                                <img src="./assets/image/social link/instagram.png" a href="social-link"></a>
+                                <img src="./assets/image/social link/whatsapp.png" a href="social-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="footer-grid">
+                        <div class="container_content">
+                            <div class="footer-content">
+                                <div class="footer-column">
+                                    <div class="footer-section">
+                                        <h4>Desenvolvido</h4>
+                                        <p>3º EMTI</p>
+                                        <p>Curso Tecnico de Desenvolvimento de Sistemas</p>
+                                        <img class="content_img" src="./assets/image/slow.png" alt="Footer Background">
+                                        <img class="content_img" src="./assets/image/ols_logo-removebg-preview.png" alt="Footer Background">
+                                    </div>
+                                </div>
+                                <div class="footer-column">
+                                    <div class="footer-section">
+                                        <h4>Colaboradores</h4>
+                                        <div class="colaboradores">
+                                            <span>
+                                                <p>Brenda Mariane</p>
+                                                <p>Camilly vitoria</p>
+                                                <p>Carlos Eduardo</p>
+                                                <p>Eduardo Antônio</p>
+                                                <p>Eduardo Lopes</p>
+                                                <p>Eric Wesley</p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-column">
+                                    <div class="footer-section">
+                                        <h4>Colaboradores</h4>
+                                        <span>
+                                            <p>Fabiana Simões</p>
+                                            <p>Gustavo Martim</p>
+                                            <p>Henrique Ramos</p>
+                                            <p>Júlia Gabriélle</p>
+                                            <p>Julia Karen</p>
+                                            <p>Juliana Vitória</p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="footer-column">
+                                    <div class="footer-section">
+                                        <h4>Colaboradores</h4>
+                                        <span>
+                                            <p>Kauã Herinque</p>
+                                            <p>Leonardo de Paula</p>
+                                            <p>Luna Fernades</p>
+                                            <p>Maria Eduarda</p>
+                                            <p>Nathália Abreu</p>
+                                            <p>Samira Luiza</p>
+                                            <p>Samuel Eleodoro</p>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Escola Prof Guerino Casasanta.Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </footer> 
+        </div>
+    </footer> 
+
+        <!-- Adicione este HTML antes do fechamento do body -->
+        <a href="index.html" class="back-to-home">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+        </a>
+
+
+         <!--swiper-->
+         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+         <script src="./assets/js/galeria.js"></script>
+
+</body>
+</html>
