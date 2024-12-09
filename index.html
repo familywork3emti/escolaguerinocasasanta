@@ -31,7 +31,7 @@
             </ul>
             <div class="link link-1">
                 <a href="https://www.instagram.com/"target="_blank" rel="noopener noreferrer" i class="bi bi-instagram"></i></a> 
-                <a href="https://www.whatsapp.com/?lang=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-whatsapp"></i></a> 
+                <a href="https://wa.me/+553534411941"  target="_blank" rel="noopener noreferrer" i class="bi bi-whatsapp"></i></a> 
                 <a href="https://www.facebook.com/GuerinoCasasanta/?locale=pt_BR"  target="_blank" rel="noopener noreferrer" i class="bi bi-facebook"></i></a>            
             </div> 
          </nav>
@@ -360,39 +360,23 @@ Sobre -->
             </div>
         </div>
     </section>
-            <section id="contact" class="contact-section">
-             <h2>contatos</h2>
-             <form id="contact-form" action="process_form.php" method="post">
-               <input type="text" name="name" placeholder="seu nome" required>
-               <input type="email" name="email" placeholder="seu email" required>
-               <textarea name="message" placeholder="message" required></textarea>
-               <button type="submit">enviar</button>
-           </form>
-            </section>
-            <!--
-                <section id="contact" class="contact-section">
-                   <h2>Contatos</h2>
-                   <form id="contact-form" class="contact-form">
-                       <div class="form-group">
-                           <input type="text" name="name" placeholder="Seu nome" required>
-                           <span class="error-message" id="name-error"></span>
-                       </div>
-                       <div class="form-group">
-                           <input type="email" name="email" placeholder="Seu email" required>
-                           <span class="error-message" id="email-error"></span>
-                       </div>
-                       <div class="form-group">
-                           <textarea name="message" placeholder="Sua mensagem" required></textarea>
-                           <span class="error-message" id="message-error"></span>
-                       </div>
-                       <button type="submit">
-                           <span class="button-text">Enviar</span>
-                           <span class="spinner hidden"></span>
-                       </button>
-                       <div id="form-message" class="form-message"></div>
-                   </form>
-               </section>
-         -->
+    <section id="contact" class="contact-section">
+        <h2>Contatos</h2>
+        <form id="contact-form">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
+            <input type="tel" name="telefone" placeholder="Seu telefone" required>
+            <select name="assunto" required>
+                <option value="">Selecione um assunto</option>
+                <option value="Dúvidas">Dúvidas</option>
+                <option value="Matrícula">Matrícula</option>
+                <option value="Outros">Outros</option>
+            </select>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="status-message"></div>
+    </section>    
          <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -470,7 +454,8 @@ Sobre -->
                     </div>
                 </section>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 Escola Prof Guerino Casasanta.Todos os direitos reservados.</p>
+                    <p>&copy; 2024 Escola Prof.Guerino Casasanta - Todos os direitos reservados</p>
+                    <p>Contato: (35) 3441-1941 | escola.55948@educacao.mg.gov.br</p>
                 </div>
             </div>
         </footer>

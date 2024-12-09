@@ -1,0 +1,175 @@
+
+        :root {
+            /* Paleta de Cores */
+            --color-primary: #3498db;
+            --color-secondary: #2ecc71;
+            --color-background: #f4f6f9;
+            --color-text: #333;
+            --color-text-light: #666;
+            --color-white: #ffffff;
+
+            /* Espaçamentos */
+            --spacing-small: 0.5rem;
+            --spacing-medium: 1rem;
+            --spacing-large: 2rem;
+
+            /* Transições */
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        /* Cabeçalho */
+        .header_head {
+            background: linear-gradient(135deg, var(--color-primary), #6a11cb);
+            color: var(--color-white);
+            margin-top: 90px;
+            text-align: center;
+            padding: 4rem 1rem;
+            margin-bottom: var(--spacing-large);
+        }
+
+        .header_head h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-medium);
+            letter-spacing: -1px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-large);
+        }
+
+        /* Seções de Conteúdo */
+        .section {
+            background: var(--color-white);
+            border-radius: 12px;
+            padding: var(--spacing-large);
+            margin-bottom: var(--spacing-large);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: var(--spacing-large);
+            color: var(--color-primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--color-primary);
+        }
+
+        /* Grid de Recursos */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-large);
+        }
+
+        .feature-card {
+            background: var(--color-background);
+            border-radius: 12px;
+            padding: var(--spacing-large);
+            text-align: center;
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-medium);
+        }
+
+        /* Seção de Metodologia */
+        .methodology {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-large);
+            align-items: center;
+        }
+
+        .methodology-image {
+            background-color: var(--color-background);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .methodology-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-small) var(--spacing-medium);
+            background: var(--color-primary);
+            color: var(--color-white);
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 
+            background var(--transition-speed) ease,
+            transform var(--transition-speed) ease;
+            margin-top: var(--spacing-medium);
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: scale(1.05);
+        }
+
+        /* Rodapé */
+        .footer {
+            background: var(--color-primary);
+            color: var(--color-white);
+            text-align: center;
+            padding: var(--spacing-large);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .methodology {
+                grid-template-columns: 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+            }
+        }

@@ -1,24 +1,23 @@
-root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --text-color: #333;
-    --background-color: #f4f4f4;
+:root {
+    --primary-color: #2563eb;
+    --secondary-color: #1e40af;
+    --accent-color: #09c787;
+    --text-color: #1f2937;
+    --light-bg: #f3f4f6;
     --white: #ffffff;
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
-
 /* Hero Banner */
 .hero-banner {
     position: relative;
@@ -28,13 +27,12 @@ root {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, rgba(52, 152, 219, 0.438), rgba(46, 204, 112, 0.425)), 
+    background: linear-gradient(135deg, rgba(0, 12, 182, 0.658), rgba(1, 33, 177, 0.678)), 
                 url('../image/3d/1733105032830.jpg');
     background-size: cover;
     background-position: center;
     animation: fadeIn 1.5s ease-in-out;
 }
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -43,18 +41,15 @@ root {
         opacity: 1;
     }
 }
-
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
     font-weight: 700;
 }
-
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 30px;
 }
-
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -66,12 +61,10 @@ root {
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-
 .btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
 }
-
 /* Feature Sections */
 .feature-section {
     display: flex;
@@ -82,11 +75,9 @@ root {
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     position: relative;
 }
-
 .feature-section:nth-child(even) {
     flex-direction: row-reverse;
 }
-
 .feature-image {
     flex: 1;
     min-height: 500px;
@@ -94,7 +85,6 @@ root {
     background-position: center;
     position: relative;
 }
-
 .feature-content {
     flex: 1;
     padding: 40px;
@@ -102,25 +92,21 @@ root {
     position: relative;
     z-index: 1;
 }
-
 .feature-content h2 {
     color: var(--primary-color);
     margin-bottom: 20px;
     font-size: 2rem;
 }
-
 .feature-content ul {
     list-style-type: none;
     margin-bottom: 20px;
 }
-
 .feature-content ul li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
     color: #555;
 }
-
 .feature-content ul li::before {
     content: '✓';
     position: absolute;
@@ -128,7 +114,6 @@ root {
     color: var(--secondary-color);
     font-weight: bold;
 }
-
 /* Enrollment Section */
 .enrollment-section {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -136,20 +121,17 @@ root {
     padding: 60px 20px;
     text-align: center;
 }
-
 .enrollment-form {
     max-width: 600px;
     margin: 0 auto;
     background-color: var(--white);
     padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
 .enrollment-form input:invalid {
-    border-color: red;
+    border-color: rgb(5, 21, 241);
 }
-
 .enrollment-form input,
 .enrollment-form select {
     width: 100%;
@@ -159,7 +141,6 @@ root {
     border-radius: 5px;
     font-size: 1rem;
 }
-
 .enrollment-form .btn {
     background-color: var(--primary-color);
     color: var(--white);
@@ -167,14 +148,8 @@ root {
     width: 100%;
 }
 footer {
-    background-color: #2c3e50;
+    background-color:var(--primary-color);
     color: var(--white);
     text-align: center;
     padding: 30px 0;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: var(--white);
 }

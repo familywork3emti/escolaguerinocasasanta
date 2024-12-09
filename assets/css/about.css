@@ -96,12 +96,12 @@ section {
     padding: 1rem 2.5rem;
     font-size: 1.1rem;
     color: #ffffff;
-    background: linear-gradient(45deg, #4A90E2, #357ABD);
+    background: linear-gradient(45deg, #08cf94, #06c585);
     border: none;
     border-radius: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    box-shadow: 0 4px 15px rgba(2, 124, 88, 0.418);
     cursor: pointer;
     font-weight: 500;
     text-transform: uppercase;
@@ -246,7 +246,7 @@ section {
 .decoration-circle {
     position: absolute;
     border-radius: 50%;
-    background: linear-gradient(45deg, rgba(73, 145, 228, 0.274), rgba(53, 121, 189, 0.377));
+    background: linear-gradient(45deg, rgba(73, 145, 228, 0.363), rgba(53, 121, 189, 0.377));
     z-index: 0;
 }
 

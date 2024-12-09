@@ -56,10 +56,39 @@ nav a {
 nav a:hover {
     color: var(--primary-color);
 }
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--light-bg);
+    padding: 20px;
+    height: 20px;
+    border-radius: 15px;
+    gap:20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.link a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+.link a:hover {
+    transform: scale(1.2);
+}
+.link a.bi-instagram:hover {
+    color: #E1306C;
+}
+.link a.bi-whatsapp:hover {
+    color: #25D366;
+}
+.link a.facebook:hover {
+    color: #1877F2;
+}
 .link-1 a,bi-bi{
     display: inline;
-    width:3rem;
-    height:3rem;
     gap: 1rem;
     font-size: 1.2rem;
     transition: fill 0.3s ease; 
@@ -93,14 +122,12 @@ section {
     margin-bottom: 20px;
     color: #4CAF50;
 }
-
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
 }
-
 .gallery img {
     max-width: 100%;
     width: 300px;
