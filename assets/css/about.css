@@ -98,7 +98,7 @@ section {
     color: #ffffff;
     background: linear-gradient(45deg, #08cf94, #06c585);
     border: none;
-    border-radius: 50px;
+    border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(2, 124, 88, 0.418);

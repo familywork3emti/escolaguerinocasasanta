@@ -24,7 +24,7 @@
             </a> 
           </div>
             <ul>
-                <li><a href="#home">Inicio</a></li>
+                <li><a href="#home"><span>Inicio</span></a></li>
                 <li><a href="#services">Eventos</a></li>  
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#contact">Contatos</a></li>
@@ -40,7 +40,7 @@
          <div>
             <h1>Bem-Vindos </h1>
             <h2> Escola Estadual Professor Guerino Casasanta</h2>
-            <p> Pequenas vitorias diarias geram grandes conquistas no futuro.</p>
+            <p> Pequenas vitórias diárias geram grandes conquistas no futuro.</p>
             <a href="escola.html"class="cta-button"> Saiba Mais</a>
          </div>
        </section>
@@ -316,7 +316,7 @@ Sobre -->
                 </div>
             </div>
             <div class="button-container">
-                <a href="#" class="saiba-mais">Saiba Mais</a>
+                <a href="escola.html" class="saiba-mais">Saiba Mais</a>
             </div>
         </div>
     </section>
@@ -468,5 +468,37 @@ Sobre -->
          <!--swiper-->
          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
          <script src="./assets/js/script.js"></script>
+         <script src="./server.js"></script>
+
+         <script>
+            document.getElementById('contact-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const formData = {
+                    nome: e.target.nome.value,
+                    email: e.target.email.value,
+                    telefone: e.target.telefone.value,
+                    assunto: e.target.assunto.value,
+                    mensagem: e.target.mensagem.value
+                };
+            
+                try {
+                    const response = await fetch('http://localhost:3333/enviar-mensagem', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+            
+                    const result = await response.json();
+                    alert(result.mensagem);
+                    e.target.reset();
+                } catch (error) {
+                    alert('Erro ao enviar mensagem');
+                    console.error(error);
+                }
+            });
+            </script>
 </body>
 </html>

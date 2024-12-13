@@ -58,7 +58,7 @@
             border-radius: 12px;
             padding: var(--spacing-large);
             margin-bottom: var(--spacing-large);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 30px rgba(7, 5, 150, 0.329);
         }
 
         .section-title {
@@ -96,7 +96,7 @@
 
         .feature-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 30px rgba(7, 5, 150, 0.61);
         }
 
         .feature-icon {
