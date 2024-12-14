@@ -1,2 +1,3 @@
-2024/12/12-06:26:35.075 259a Creating DB /home/gilson-da-silva/Documents/atividades/projeto escola/tokens/school-contact/Default/shared_proto_db since it was missing.
-2024/12/12-06:26:35.098 259a Reusing MANIFEST /home/gilson-da-silva/Documents/atividades/projeto escola/tokens/school-contact/Default/shared_proto_db/MANIFEST-000001
+2024/12/13-09:45:19.188 5e63 Reusing MANIFEST /home/gilson-da-silva/Documents/atividades/projeto escola/tokens/school-contact/Default/shared_proto_db/MANIFEST-000001
+2024/12/13-09:45:19.189 5e63 Recovering log #3
+2024/12/13-09:45:19.197 5e63 Reusing old log /home/gilson-da-silva/Documents/atividades/projeto escola/tokens/school-contact/Default/shared_proto_db/000003.log 
