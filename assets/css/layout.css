@@ -592,6 +592,32 @@ button:disabled {
     width:50px;
     height: 50px;
 }
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    .footer-content,
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-links {
+        margin-right: 120px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
