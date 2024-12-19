@@ -608,14 +608,19 @@ button:disabled {
         text-align: center;
         width: 100%;
     }
-
     .social-links {
-        margin-right: 120px;
+        margin-right: 118px;
+        margin-top: 40px;
         flex-wrap: wrap;
     }
 
     .footer-bottom {
         text-align: center;
+    }
+    .colaboradores {
+        display: flex;
+        margin-left:110px;
+        gap:20px;
     }
 }
 /* Responsive Design */
